@@ -1,0 +1,33 @@
+/*
+ * AVR.c
+ *
+ * Created: 7/4/2022 1:58:41 PM
+ * Author : Osama
+ */
+
+
+#include "LIB/STD_TYPES.h"
+#include "MCAL/DIO/DIO_interface.h"
+#include "MCAL/TIMERS/Timers_interface.h"
+
+
+#include <avr/interrupt.h>
+
+
+int main(void)
+{
+	EXTI_voidInitPinConnection(EXTI_INT0);
+	GIE_voidEnableGlobalInterrupt();
+	EXTI_voidEnable(EXTI_INT0);
+
+	EXTI_voidTriggerEdge(EXTI_INT0 , FALLING_EDGE);
+
+    while (1)
+    {
+    }
+}
+
+ISR(INT0_vect)
+{
+   /* toggle led */
+}

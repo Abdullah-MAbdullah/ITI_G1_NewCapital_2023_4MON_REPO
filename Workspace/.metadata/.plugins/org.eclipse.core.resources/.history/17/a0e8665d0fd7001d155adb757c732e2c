@@ -1,0 +1,44 @@
+/*********************************************
+ * Author:          Abdullah M. Abdullah
+ * Creation Data:   09 APR, 2023
+ * Version:         v1.0
+ * Compiler:        GNU GCC
+ ********************************************/
+/*********************************************
+ * Version      Date                  Author                  Description
+ * v1.0         09 APR, 2023    Abdullah M. Abdullah          Initial Creation
+*********************************************/
+
+ *
+ *  Created on: Apr 9, 2023
+ *      Author: asss5
+ */
+
+#ifndef MCAL_TIMER_TIMER_PRIVATE_H_
+#define MCAL_TIMER_TIMER_PRIVATE_H_
+
+/****************************************** TIMER 0 REGISTERS *************************************/
+#define     TCCR0		      *((volatile u8 *)(0x53))		// Timer/Counter0 Control Register
+#define     TCCR0_FOC0        7								// Force On Compare
+#define     TCCR0_WGM00       6                             // Wave Generation Mode 0
+#define     TCCR0_COM01       5                             // Compare match output mode 1
+#define     TCCR0_COM00       4                             // Compare match output mode 0
+#define     TCCR0_WGM01       3                             // Wave Generation Mode 1
+#define     TCCR0_CS02        2                             // Clock Select 02
+#define     TCCR0_CS01        1                             // Clock Select 01
+#define     TCCR0_CS00        0                             // Clock Select 00
+
+#define     TCNT0		      *((volatile u8 *)(0x52))		// Timer/Counter0 Register
+
+#define     OCR0		      *((volatile u8 *)(0x5C))		// Output Compare0 Register
+
+#define     TIMSK		      *((volatile u8 *)(0x59))		// Timer0 Mask Register
+#define     TIMSK_TOIE0       0								// Timer Overflow Interrupt Enable
+#define     TIMSK_OCIE0       1                             // Timer On Compare Interrupt Enable
+
+#define     TIFR              *((volatile u8 *)(0x58))		// Timer/Counter0 Interrupt Flag
+#define     TIFR_TOV0         0								// Timer/Counter0 Overflow flag
+#define     TIFR_OCF0         1                             // Timer/Counter0 Output Compare flag
+
+
+#endif /* MCAL_TIMER_TIMER_PRIVATE_H_ */

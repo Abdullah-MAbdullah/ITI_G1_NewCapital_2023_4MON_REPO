@@ -1,0 +1,13 @@
+/*
+ * TIMER_config.h
+ *
+ *  Created on: Apr 9, 2023
+ *      Author: Abdullah.Moustafa
+ */
+
+#ifndef MCAL_TIMER_TIMER_CONFIG_H_
+#define MCAL_TIMER_TIMER_CONFIG_H_
+
+
+
+#endif /* MCAL_TIMER_TIMER_CONFIG_H_ */

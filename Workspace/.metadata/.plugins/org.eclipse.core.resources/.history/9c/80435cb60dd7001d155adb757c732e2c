@@ -1,0 +1,34 @@
+/*
+ * AVR.c
+ *
+ * Created: 7/4/2022 1:58:41 PM
+ * Author : Osama
+ */
+
+
+#include "LIB/STD_TYPES.h"
+#include "MCAL/DIO/DIO_interface.h"
+#include "MCAL/TIMER/TIMER_interface.h"
+
+
+#include <avr/interrupt.h>
+
+
+int main(void)
+{
+	DIO_voidSetPinDirection(DIO_PORTA, PIN0, OUTPUT);
+	TIMER0_voidInit();
+
+    while (1)
+    {
+    	DIO_voidSetPinValue(DIO_PORTA, PIN0, HIGH);
+    	TIMER0_voidSetBusyWait_OCMode(1000);
+		DIO_voidSetPinValue(DIO_PORTA, PIN0, LOW);
+		TIMER0_voidSetBusyWait_OCMode(1000);
+    }
+}
+
+ISR(INT0_vect)
+{
+   /* toggle led */
+}
