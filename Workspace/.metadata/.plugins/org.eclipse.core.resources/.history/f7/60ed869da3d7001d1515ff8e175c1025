@@ -1,0 +1,30 @@
+/*********************************************
+ * Author:          Abdullah M. Abdullah
+ * Creation Data:   10 APR, 2023
+ * Version:         v1.0
+ * Compiler:        GNU GCC
+ ********************************************/
+/*********************************************
+ * Version      Date                  Author                  Description
+ * v1.0         10 APR, 2023    Abdullah M. Abdullah          Initial Creation
+*********************************************/
+#include "../LIB/BIT_MATH.h"
+#include "../LIB/STD_TYPES.h"
+
+#include "../MCAL/DIO/DIO_interface.h"
+#include "../MCAL/TIMER/TIMER_interface.h"
+
+int main(void)
+{
+	/*Initialize The Timer*/
+	TIMER0_voidInit();
+	/*Set The Compare Match Value*/
+	while(1)
+	{
+
+	}
+}
+
+
+
+

@@ -1,290 +1,32 @@
-21:35:44 **** Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-../MCAL/TIMER/TIMER_program.c:15: error: 'NULL_PTR' undeclared here (not in a function)
-make: *** [MCAL/TIMER/TIMER_program.o] Error 1
-21:36:23 **** Incremental Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-Finished building: ../MCAL/TIMER/TIMER_program.c
- 
-Building file: ../MCAL/GIE/GIE_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GIE/GIE_program.d" -MT"MCAL/GIE/GIE_program.o" -c -o "MCAL/GIE/GIE_program.o" "../MCAL/GIE/GIE_program.c"
-Finished building: ../MCAL/GIE/GIE_program.c
- 
-Building file: ../MCAL/EXTI/EXTI_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/EXTI/EXTI_program.d" -MT"MCAL/EXTI/EXTI_program.o" -c -o "MCAL/EXTI/EXTI_program.o" "../MCAL/EXTI/EXTI_program.c"
-Finished building: ../MCAL/EXTI/EXTI_program.c
- 
-Building file: ../MCAL/DIO/DIO_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/DIO/DIO_program.d" -MT"MCAL/DIO/DIO_program.o" -c -o "MCAL/DIO/DIO_program.o" "../MCAL/DIO/DIO_program.c"
-Finished building: ../MCAL/DIO/DIO_program.c
- 
-Building file: ../MCAL/ADC/ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/ADC/ADC_program.d" -MT"MCAL/ADC/ADC_program.o" -c -o "MCAL/ADC/ADC_program.o" "../MCAL/ADC/ADC_program.c"
-Finished building: ../MCAL/ADC/ADC_program.c
- 
-Building file: ../HAL/LED/LED_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LED/LED_program.d" -MT"HAL/LED/LED_program.o" -c -o "HAL/LED/LED_program.o" "../HAL/LED/LED_program.c"
-Finished building: ../HAL/LED/LED_program.c
- 
-Building file: ../HAL/LCD/LCD_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LCD/LCD_program.d" -MT"HAL/LCD/LCD_program.o" -c -o "HAL/LCD/LCD_program.o" "../HAL/LCD/LCD_program.c"
-In file included from ../HAL/LCD/LCD_program.c:13:
-c:/users/abdullah.moustafa/desktop/desktop/iti/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../HAL/LCD/LCD_program.c
- 
-Building file: ../HAL/KPD/KPD_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/KPD/KPD_program.d" -MT"HAL/KPD/KPD_program.o" -c -o "HAL/KPD/KPD_program.o" "../HAL/KPD/KPD_program.c"
-Finished building: ../HAL/KPD/KPD_program.c
- 
-Building file: ../APP/main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
-../APP/main.c:9:27: error: LIB/STD_TYPES.h: No such file or directory
-../APP/main.c:10:36: error: MCAL/DIO/DIO_interface.h: No such file or directory
-../APP/main.c:11:40: error: MCAL/TIMER/TIMER_interface.h: No such file or directory
-../APP/main.c: In function 'main':
-../APP/main.c:17: warning: implicit declaration of function 'DIO_voidSetPinDirection'
-../APP/main.c:17: error: 'DIO_PORTA' undeclared (first use in this function)
-../APP/main.c:17: error: (Each undeclared identifier is reported only once
-../APP/main.c:17: error: for each function it appears in.)
-../APP/main.c:17: error: 'PIN0' undeclared (first use in this function)
-../APP/main.c:17: error: 'OUTPUT' undeclared (first use in this function)
-../APP/main.c:18: warning: implicit declaration of function 'TIMER0_voidInit'
-../APP/main.c:22: warning: implicit declaration of function 'DIO_voidSetPinValue'
-../APP/main.c:22: error: 'HIGH' undeclared (first use in this function)
-../APP/main.c:23: warning: implicit declaration of function 'TIMER0_voidSetBusyWait_OCMode'
-../APP/main.c:24: error: 'LOW' undeclared (first use in this function)
-make: *** [APP/main.o] Error 1
-21:36:37 **** Incremental Build of configuration Debug for project Timer_Test ****
+15:33:32 **** Incremental Build of configuration Debug for project LED_PWM ****
 make all 
 Building file: ../APP/main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
+In file included from ../APP/main.c:13:
+c:/users/abdullah.moustafa/desktop/group data/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../APP/main.c
  
-Building target: Timer_Test.elf
+Building target: LED_PWM.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Timer_Test.map -mmcu=atmega32 -o "Timer_Test.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
-Finished building target: Timer_Test.elf
+avr-gcc -Wl,-Map,LED_PWM.map -mmcu=atmega32 -o "LED_PWM.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
+Finished building target: LED_PWM.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S Timer_Test.elf  >"Timer_Test.lss"
-Finished building: Timer_Test.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Timer_Test.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    8948 bytes (27.3% Full)
-(.text + .data + .bootloader)
-
-Data:         42 bytes (2.1% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:39:45 **** Incremental Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-Finished building: ../MCAL/TIMER/TIMER_program.c
- 
-Building target: Timer_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Timer_Test.map -mmcu=atmega32 -o "Timer_Test.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
-Finished building target: Timer_Test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S Timer_Test.elf  >"Timer_Test.lss"
-Finished building: Timer_Test.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Timer_Test.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    9092 bytes (27.7% Full)
-(.text + .data + .bootloader)
-
-Data:         42 bytes (2.1% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:47:36 **** Incremental Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-../MCAL/TIMER/TIMER_program.c:18:27: error: TIMERS_config.h: No such file or directory
-make: *** [MCAL/TIMER/TIMER_program.o] Error 1
-21:48:18 **** Incremental Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-Finished building: ../MCAL/TIMER/TIMER_program.c
- 
-Building file: ../APP/main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
-Finished building: ../APP/main.c
- 
-Building target: Timer_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Timer_Test.map -mmcu=atmega32 -o "Timer_Test.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
-Finished building target: Timer_Test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S Timer_Test.elf  >"Timer_Test.lss"
-Finished building: Timer_Test.lss
+avr-objdump -h -S LED_PWM.elf  >"LED_PWM.lss"
+Finished building: LED_PWM.lss
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Timer_Test.elf  "Timer_Test.hex"
-Finished building: Timer_Test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LED_PWM.elf  "LED_PWM.hex"
+Finished building: LED_PWM.hex
  
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Timer_Test.elf
+avr-size --format=avr --mcu=atmega32 LED_PWM.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    9092 bytes (27.7% Full)
-(.text + .data + .bootloader)
-
-Data:         42 bytes (2.1% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:49:33 **** Incremental Build of configuration Debug for project Timer_Test ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-Finished building: ../MCAL/TIMER/TIMER_program.c
- 
-Building target: Timer_Test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Timer_Test.map -mmcu=atmega32 -o "Timer_Test.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
-Finished building target: Timer_Test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S Timer_Test.elf  >"Timer_Test.lss"
-Finished building: Timer_Test.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Timer_Test.elf  "Timer_Test.hex"
-Finished building: Timer_Test.hex
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Timer_Test.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    9092 bytes (27.7% Full)
-(.text + .data + .bootloader)
-
-Data:         42 bytes (2.1% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:52:26 **** Clean-only build of configuration Debug for project Toggle_LED_within_1Second ****
-make clean 
-rm -rf  Timer_Test.hex  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o  sizedummy  Timer_Test.lss  ./MCAL/TIMER/TIMER_program.d  ./MCAL/GIE/GIE_program.d  ./MCAL/EXTI/EXTI_program.d  ./MCAL/DIO/DIO_program.d  ./MCAL/ADC/ADC_program.d  ./HAL/LED/LED_program.d  ./HAL/LCD/LCD_program.d  ./HAL/KPD/KPD_program.d  ./APP/main.d  Timer_Test.elf
- 
-21:52:50 **** Build of configuration Debug for project Toggle_LED_within_1Second ****
-make all 
-Building file: ../MCAL/TIMER/TIMER_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
-Finished building: ../MCAL/TIMER/TIMER_program.c
- 
-Building file: ../MCAL/GIE/GIE_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GIE/GIE_program.d" -MT"MCAL/GIE/GIE_program.o" -c -o "MCAL/GIE/GIE_program.o" "../MCAL/GIE/GIE_program.c"
-Finished building: ../MCAL/GIE/GIE_program.c
- 
-Building file: ../MCAL/EXTI/EXTI_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/EXTI/EXTI_program.d" -MT"MCAL/EXTI/EXTI_program.o" -c -o "MCAL/EXTI/EXTI_program.o" "../MCAL/EXTI/EXTI_program.c"
-Finished building: ../MCAL/EXTI/EXTI_program.c
- 
-Building file: ../MCAL/DIO/DIO_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/DIO/DIO_program.d" -MT"MCAL/DIO/DIO_program.o" -c -o "MCAL/DIO/DIO_program.o" "../MCAL/DIO/DIO_program.c"
-Finished building: ../MCAL/DIO/DIO_program.c
- 
-Building file: ../MCAL/ADC/ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/ADC/ADC_program.d" -MT"MCAL/ADC/ADC_program.o" -c -o "MCAL/ADC/ADC_program.o" "../MCAL/ADC/ADC_program.c"
-Finished building: ../MCAL/ADC/ADC_program.c
- 
-Building file: ../HAL/LED/LED_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LED/LED_program.d" -MT"HAL/LED/LED_program.o" -c -o "HAL/LED/LED_program.o" "../HAL/LED/LED_program.c"
-Finished building: ../HAL/LED/LED_program.c
- 
-Building file: ../HAL/LCD/LCD_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LCD/LCD_program.d" -MT"HAL/LCD/LCD_program.o" -c -o "HAL/LCD/LCD_program.o" "../HAL/LCD/LCD_program.c"
-In file included from ../HAL/LCD/LCD_program.c:13:
-c:/users/abdullah.moustafa/desktop/desktop/iti/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-Finished building: ../HAL/LCD/LCD_program.c
- 
-Building file: ../HAL/KPD/KPD_program.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/KPD/KPD_program.d" -MT"HAL/KPD/KPD_program.o" -c -o "HAL/KPD/KPD_program.o" "../HAL/KPD/KPD_program.c"
-Finished building: ../HAL/KPD/KPD_program.c
- 
-Building file: ../APP/main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
-Finished building: ../APP/main.c
- 
-Building target: Toggle_LED_within_1Second.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,Toggle_LED_within_1Second.map -mmcu=atmega32 -o "Toggle_LED_within_1Second.elf"  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
-Finished building target: Toggle_LED_within_1Second.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S Toggle_LED_within_1Second.elf  >"Toggle_LED_within_1Second.lss"
-Finished building: Toggle_LED_within_1Second.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Toggle_LED_within_1Second.elf  "Toggle_LED_within_1Second.hex"
-Finished building: Toggle_LED_within_1Second.hex
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 Toggle_LED_within_1Second.elf
-AVR Memory Usage
-----------------
-Device: atmega32
-
-Program:    9092 bytes (27.7% Full)
+Program:    9344 bytes (28.5% Full)
 (.text + .data + .bootloader)
 
 Data:         42 bytes (2.1% Full)

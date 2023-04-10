@@ -1,0 +1,20 @@
+/*
+ * EXTI_config.h
+ *
+ *  Created on: Mar 29, 2023
+ *      Author: Osama
+ */
+
+#ifndef MCAL_EXTI_EXTI_CONFIG_H_
+#define MCAL_EXTI_EXTI_CONFIG_H_
+
+/* Options :
+ * INTERNAL_PULLUP - EXTERNAL_PULLUP - EXTERNAL_PULLDOWN
+ */
+#define INT0_PIN_CONNECTION   INTERNAL_PULLUP
+
+#define INT1_PIN_CONNECTION   INTERNAL_PULLUP
+
+#define INT2_PIN_CONNECTION   INTERNAL_PULLUP
+
+#endif /* MCAL_EXTI_EXTI_CONFIG_H_ */
