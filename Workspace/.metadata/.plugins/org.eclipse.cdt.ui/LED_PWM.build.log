@@ -1,4 +1,4 @@
-15:33:32 **** Incremental Build of configuration Debug for project LED_PWM ****
+14:28:24 **** Incremental Build of configuration Debug for project LED_PWM ****
 make all 
 Building file: ../APP/main.c
 Invoking: AVR Compiler
@@ -26,7 +26,7 @@ AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    9344 bytes (28.5% Full)
+Program:    9632 bytes (29.4% Full)
 (.text + .data + .bootloader)
 
 Data:         42 bytes (2.1% Full)
@@ -36,5 +36,5 @@ Data:         42 bytes (2.1% Full)
 Finished building: sizedummy
  
 
-15:33:58 Build Finished (took 25s.649ms)
+14:28:29 Build Finished (took 4s.501ms)
 

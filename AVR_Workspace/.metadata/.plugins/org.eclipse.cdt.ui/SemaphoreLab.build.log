@@ -1,0 +1,7 @@
+22:35:40 **** Clean-only build of configuration Debug for project SemaphoreLab ****
+make clean 
+rm -rf  SemaphoreLab.hex  ./SERVICES/portable/MemMang/heap_1.o  ./SERVICES/portable/GCC/AVR32_UC3/port.o  ./SERVICES/croutine.o ./SERVICES/event_groups.o ./SERVICES/list.o ./SERVICES/queue.o ./SERVICES/stream_buffer.o ./SERVICES/tasks.o ./SERVICES/timers.o  ./MCAL/WDT/WDT_program.o  ./MCAL/UART/UART_program.o  ./MCAL/TWI/TWI_program.o  ./MCAL/TIMER/TIMER_program.o  ./MCAL/SPI/SPI_Program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./APP/KeyFlagLab.o  sizedummy  SemaphoreLab.lss  ./SERVICES/portable/MemMang/heap_1.d  ./SERVICES/portable/GCC/AVR32_UC3/port.d  ./SERVICES/croutine.d ./SERVICES/event_groups.d ./SERVICES/list.d ./SERVICES/queue.d ./SERVICES/stream_buffer.d ./SERVICES/tasks.d ./SERVICES/timers.d  ./MCAL/WDT/WDT_program.d  ./MCAL/UART/UART_program.d  ./MCAL/TWI/TWI_program.d  ./MCAL/TIMER/TIMER_program.d  ./MCAL/SPI/SPI_Program.d  ./MCAL/GIE/GIE_program.d  ./MCAL/EXTI/EXTI_program.d  ./MCAL/DIO/DIO_program.d  ./MCAL/ADC/ADC_program.d  ./APP/KeyFlagLab.d  SemaphoreLab.elf
+Command canceled
+
+22:35:43 Build Cancelled (took 3s.459ms)
+

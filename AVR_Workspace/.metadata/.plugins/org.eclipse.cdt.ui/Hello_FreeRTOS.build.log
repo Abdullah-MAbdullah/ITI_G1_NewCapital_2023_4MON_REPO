@@ -1,0 +1,43 @@
+22:25:23 **** Incremental Build of configuration Debug for project Hello_FreeRTOS ****
+make all 
+Building file: ../APP/main.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\Abdullah.moustafa\Desktop\Group Data\ITI_G1_NewCapital_2023_4MON\ITI_G1_NewCapital_2023_4MON_REPO\Workspace\Hello_FreeRTOS\SERVICES\include" -I"C:\Users\Abdullah.moustafa\Desktop\Group Data\ITI_G1_NewCapital_2023_4MON\ITI_G1_NewCapital_2023_4MON_REPO\Workspace\Hello_FreeRTOS\SERVICES\portable\GCC\ATMega323" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
+../APP/main.c:13: warning: return type of 'main' is not 'int'
+../APP/main.c: In function 'Led1_Task':
+../APP/main.c:36: warning: pointer targets in passing argument 1 of 'UART_voidSendString' differ in signedness
+../APP/main.c: In function 'Led2_Task':
+../APP/main.c:49: warning: pointer targets in passing argument 1 of 'UART_voidSendString' differ in signedness
+Finished building: ../APP/main.c
+ 
+Building target: Hello_FreeRTOS.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Hello_FreeRTOS.map -mmcu=atmega32 -o "Hello_FreeRTOS.elf"  ./SERVICES/portable/MemMang/heap_4.o  ./SERVICES/portable/GCC/ATMega323/port.o  ./SERVICES/croutine.o ./SERVICES/event_groups.o ./SERVICES/list.o ./SERVICES/queue.o ./SERVICES/stream_buffer.o ./SERVICES/tasks.o ./SERVICES/timers.o  ./MCAL/UART/UART_program.o  ./MCAL/DIO/DIO_program.o  ./APP/main.o   
+Finished building target: Hello_FreeRTOS.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Hello_FreeRTOS.elf  >"Hello_FreeRTOS.lss"
+Finished building: Hello_FreeRTOS.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Hello_FreeRTOS.elf  "Hello_FreeRTOS.hex"
+Finished building: Hello_FreeRTOS.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Hello_FreeRTOS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26120 bytes (79.7% Full)
+(.text + .data + .bootloader)
+
+Data:       1645 bytes (80.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:25:49 Build Finished (took 25s.731ms)
+

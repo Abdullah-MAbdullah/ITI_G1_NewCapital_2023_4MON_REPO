@@ -1,0 +1,52 @@
+/*****************************************************************************************
+ * Author:				Abdullah M. Abdullah
+ * Creation Data:		20 May, 2023
+ * Version:				v1.0
+ * Compiler:			GNU ARM-GCC
+ * Controller:			STM32F401CCU6 (32-bit Architecture)
+ * Processor:			Cortex M4 (32-bit Architecture)
+ * Layer:				MCAL Layer
+ *****************************************************************************************/
+/*****************************************************************************************
+ * Version	  Date				  Author				  Description
+ * v1.0		  20 May, 2023	Abdullah M. Abdullah		  Initial Creation
+*****************************************************************************************/
+#ifndef EXTI_CONFIG_H
+#define EXTI_CONFIG_H
+
+#define     EXTI_LINE0_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE1_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE2_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE3_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE4_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE5_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE6_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE7_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE8_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE9_ENABLE           MEXTI_DISABLE
+#define     EXTI_LINE10_ENABLE          MEXTI_DISABLE
+#define     EXTI_LINE11_ENABLE          MEXTI_DISABLE
+#define     EXTI_LINE12_ENABLE          MEXTI_DISABLE
+#define     EXTI_LINE13_ENABLE          MEXTI_DISABLE
+#define     EXTI_LINE14_ENABLE          MEXTI_DISABLE
+#define     EXTI_LINE15_ENABLE          MEXTI_DISABLE
+
+#define     EXTI_LINE0_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE1_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE2_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE3_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE4_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE5_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE6_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE7_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE8_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE9_SENSE_MODE       MEXTI_FALLING_EDGE 
+#define     EXTI_LINE10_SENSE_MODE      MEXTI_FALLING_EDGE
+#define     EXTI_LINE11_SENSE_MODE      MEXTI_FALLING_EDGE
+#define     EXTI_LINE12_SENSE_MODE      MEXTI_FALLING_EDGE
+#define     EXTI_LINE13_SENSE_MODE      MEXTI_FALLING_EDGE
+#define     EXTI_LINE14_SENSE_MODE      MEXTI_FALLING_EDGE
+#define     EXTI_LINE15_SENSE_MODE      MEXTI_FALLING_EDGE
+
+
+#endif

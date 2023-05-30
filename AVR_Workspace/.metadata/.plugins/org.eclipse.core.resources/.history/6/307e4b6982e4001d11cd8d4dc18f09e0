@@ -1,0 +1,63 @@
+/* Write a program to create 2 tasks Task-1 and Task-2 with the same priorities.
+ * When Task-1 executes, it should print “Hello World From Task 1”.
+ * When Task-2 executes, it should print “Hello World From Task 2”
+ * */
+#include "../LIB/BIT_MATH.h"
+#include "../LIB/STD_TYPES.h"
+
+#include "../MCAL/DIO/DIO_interface.h"
+#include "../MCAL/UART/UART_interface.h"
+
+#include "../SERVICES/include/FreeRTOS.h"
+#include "../SERVICES/include/task.h"
+
+TaskHandle_t Task1Handler= NULL;
+TaskHandle_t Task2Handler= NULL;
+
+#define NOT_AVALIABLE	0
+#define AVALIABLE		1
+
+u8 UART_Key = AVALIABLE;
+
+void Led1_Task(void *pvParam);
+void Led2_Task(void *pvParam);
+
+void main(void)
+{
+	DIO_voidSetPinDirection(DIO_PORTA, PIN0, OUTPUT);
+	DIO_voidSetPinDirection(DIO_PORTA, PIN1, OUTPUT);
+	UART_voidInit();
+	xTaskCreate(&Led1_Task,"Led 1 Task", configMINIMAL_STACK_SIZE,NULL,0,&Task1Handler);
+	xTaskCreate(&Led2_Task,"Led 2 Task", configMINIMAL_STACK_SIZE,NULL,1,&Task2Handler);
+	vTaskStartScheduler();
+	for(;;);
+}
+
+void Led1_Task(void *pvParam)
+{
+	while(1)
+	{
+		if(UART_Key == AVALIABLE)
+		{
+			UART_Key = NOT_AVALIABLE;
+			UART_voidSendString("Hello World From Task 1\r\n");
+			UART_Key = AVALIABLE;
+		}
+		vTaskDelay(1000);
+	}
+}
+
+void Led2_Task(void *pvParam)
+{
+	while(1)
+	{
+		if(UART_Key == AVALIABLE)
+		{
+			UART_Key = NOT_AVALIABLE;
+			UART_voidSendString("Hello World From Task 2\r\n");
+			UART_Key = NOT_AVALIABLE;
+		}
+		vTaskDelay(2000);
+	}
+}
+

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI Debug,org.eclipse.launchbar.core.descriptorType.default\:Hello_GPIO Debug,org.eclipse.launchbar.core.descriptorType.default\:Hello_IR.elf,org.eclipse.launchbar.core.descriptorType.default\:Hello_IR Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Hello_EXTI\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Hello_GPIO\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Hello_GPIO\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Hello_IR\ Debug/activeLaunchMode=debug

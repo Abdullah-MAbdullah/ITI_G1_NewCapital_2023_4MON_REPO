@@ -1,0 +1,90 @@
+14:13:04 **** Incremental Build of configuration Debug for project USART_Laptop_Communication ****
+make all 
+Building file: ../MCAL/WDT/WDT_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/WDT/WDT_program.d" -MT"MCAL/WDT/WDT_program.o" -c -o "MCAL/WDT/WDT_program.o" "../MCAL/WDT/WDT_program.c"
+Finished building: ../MCAL/WDT/WDT_program.c
+ 
+Building file: ../MCAL/UART/UART_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/UART/UART_program.d" -MT"MCAL/UART/UART_program.o" -c -o "MCAL/UART/UART_program.o" "../MCAL/UART/UART_program.c"
+Finished building: ../MCAL/UART/UART_program.c
+ 
+Building file: ../MCAL/TIMER/TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER/TIMER_program.d" -MT"MCAL/TIMER/TIMER_program.o" -c -o "MCAL/TIMER/TIMER_program.o" "../MCAL/TIMER/TIMER_program.c"
+Finished building: ../MCAL/TIMER/TIMER_program.c
+ 
+Building file: ../MCAL/GIE/GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GIE/GIE_program.d" -MT"MCAL/GIE/GIE_program.o" -c -o "MCAL/GIE/GIE_program.o" "../MCAL/GIE/GIE_program.c"
+Finished building: ../MCAL/GIE/GIE_program.c
+ 
+Building file: ../MCAL/EXTI/EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/EXTI/EXTI_program.d" -MT"MCAL/EXTI/EXTI_program.o" -c -o "MCAL/EXTI/EXTI_program.o" "../MCAL/EXTI/EXTI_program.c"
+Finished building: ../MCAL/EXTI/EXTI_program.c
+ 
+Building file: ../MCAL/DIO/DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/DIO/DIO_program.d" -MT"MCAL/DIO/DIO_program.o" -c -o "MCAL/DIO/DIO_program.o" "../MCAL/DIO/DIO_program.c"
+Finished building: ../MCAL/DIO/DIO_program.c
+ 
+Building file: ../MCAL/ADC/ADC_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/ADC/ADC_program.d" -MT"MCAL/ADC/ADC_program.o" -c -o "MCAL/ADC/ADC_program.o" "../MCAL/ADC/ADC_program.c"
+Finished building: ../MCAL/ADC/ADC_program.c
+ 
+Building file: ../HAL/LED/LED_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LED/LED_program.d" -MT"HAL/LED/LED_program.o" -c -o "HAL/LED/LED_program.o" "../HAL/LED/LED_program.c"
+Finished building: ../HAL/LED/LED_program.c
+ 
+Building file: ../HAL/LCD/LCD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LCD/LCD_program.d" -MT"HAL/LCD/LCD_program.o" -c -o "HAL/LCD/LCD_program.o" "../HAL/LCD/LCD_program.c"
+In file included from ../HAL/LCD/LCD_program.c:13:
+c:/users/abdullah.moustafa/desktop/group data/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/LCD/LCD_program.c
+ 
+Building file: ../HAL/KPD/KPD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/KPD/KPD_program.d" -MT"HAL/KPD/KPD_program.o" -c -o "HAL/KPD/KPD_program.o" "../HAL/KPD/KPD_program.c"
+Finished building: ../HAL/KPD/KPD_program.c
+ 
+Building file: ../APP/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/main.d" -MT"APP/main.o" -c -o "APP/main.o" "../APP/main.c"
+Finished building: ../APP/main.c
+ 
+Building target: USART_Laptop_Communication.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,USART_Laptop_Communication.map -mmcu=atmega32 -o "USART_Laptop_Communication.elf"  ./MCAL/WDT/WDT_program.o  ./MCAL/UART/UART_program.o  ./MCAL/TIMER/TIMER_program.o  ./MCAL/GIE/GIE_program.o  ./MCAL/EXTI/EXTI_program.o  ./MCAL/DIO/DIO_program.o  ./MCAL/ADC/ADC_program.o  ./HAL/LED/LED_program.o  ./HAL/LCD/LCD_program.o  ./HAL/KPD/KPD_program.o  ./APP/main.o   
+Finished building target: USART_Laptop_Communication.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S USART_Laptop_Communication.elf  >"USART_Laptop_Communication.lss"
+Finished building: USART_Laptop_Communication.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex USART_Laptop_Communication.elf  "USART_Laptop_Communication.hex"
+Finished building: USART_Laptop_Communication.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 USART_Laptop_Communication.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10064 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:13:38 Build Finished (took 33s.804ms)
+

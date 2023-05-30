@@ -1,0 +1,269 @@
+/*****************************************************************************************
+ * Author:				Abdullah M. Abdullah
+ * Creation Data:		20 May, 2023
+ * Version:				v1.0
+ * Compiler:			GNU ARM-GCC
+ * Controller:			STM32F401CCU6 (32-bit Architecture)
+ * Processor:			Cortex M4 (32-bit Architecture)
+ * Layer:				MCAL Layer
+ *****************************************************************************************/
+/*****************************************************************************************
+ * Version	  Date				  Author				  Description
+ * v1.0		  20 May, 2023	Abdullah M. Abdullah		  Initial Creation
+*****************************************************************************************/
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#include "SYSCFG_interface.h"
+
+#include "EXTI_interface.h"
+#include "EXTI_private.h"
+#include "EXTI_config.h"
+
+static void (* pvoidNotificationFunctions[15]) (void) = {{NULL}};
+
+void MEXTI_voidInit(void)
+{
+    
+}
+
+void MEXTI_voidEnablePeripheralInterruptRequest(u8 Copy_u8EXTILine, u8 Copy_u8PortName)
+{
+    if (Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    else
+    {
+        MSYSCFG_voidSetEXTILinePin(Copy_u8EXTILine, Copy_u8PortName);
+        SET_BIT(MEXTI -> IMR, Copy_u8EXTILine);
+
+    }
+}
+
+void MEXTI_voidDisablePeripheralInterruptRequest(u8 Copy_u8EXTILine, u8 Copy_u8PortName)
+{
+    if (Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    else
+    {
+        CLR_BIT(MEXTI -> IMR, Copy_u8EXTILine);
+    }
+}
+
+
+void MEXTI_voidEnablePeripheralEventRequest(u8 Copy_u8EXTILine, u8 Copy_u8PortName)
+{
+    if (Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    else
+    {
+        MSYSCFG_voidSetEXTILinePin(Copy_u8EXTILine, Copy_u8PortName);
+        SET_BIT(MEXTI -> EMR, Copy_u8EXTILine);
+    }
+}
+
+void MEXTI_voidDisablePeripheralEventRequest(u8 Copy_u8EXTILine, u8 Copy_u8PortName)
+{
+    if (Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    else
+    {
+        CLR_BIT(MEXTI -> EMR, Copy_u8EXTILine);
+    }
+}
+
+void MEXTI_voidChangeSenseMode(u8 Copy_u8EXTILine, u8 Copy_u8SenseMode)
+{
+    if (Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    else
+    {
+        switch(Copy_u8SenseMode)
+        {
+            case MEXTI_RISING_EDGE:
+                CLR_BIT(MEXTI -> FTSR, Copy_u8EXTILine);
+                SET_BIT(MEXTI -> RTSR, Copy_u8EXTILine);
+            break;
+            case MEXTI_FALLING_EDGE:
+                CLR_BIT(MEXTI -> RTSR, Copy_u8EXTILine);
+                SET_BIT(MEXTI -> FTSR, Copy_u8EXTILine);
+            break;
+
+            case MEXTI_ON_CHAGE:
+                SET_BIT(MEXTI -> RTSR, Copy_u8EXTILine);
+                SET_BIT(MEXTI -> FTSR, Copy_u8EXTILine);
+            break;
+
+            default:
+                // error
+            break;
+        }
+
+    }
+}
+
+u8 MEXTI_u8GetPendingFlag(u8 Copy_u8EXTILine)
+{
+    u8 Local_u8PendingFlag;
+    if(Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    Local_u8PendingFlag = GET_BIT(MEXTI->PR, Copy_u8EXTILine);
+}
+
+void MEXTI_voidClearPendingFlag(u8 Copy_u8EXTILine)
+{
+    if(Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    SET_BIT(MEXTI->PR, Copy_u8EXTILine);
+}
+
+void MEXTI_voidSetCallBack(u8 Copy_u8EXTILine, void (* pvNotifiFunction) (void))
+{
+    if(Copy_u8EXTILine > 15)
+    {
+        return;
+    }
+    pvoidNotificationFunctions[Copy_u8EXTILine] = pvNotifiFunction;
+}
+
+void EXTI0_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE0] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE0]();
+    }
+}
+
+void EXTI1_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE1] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE1]();
+    }
+}
+
+void EXTI2_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE2] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE2]();
+    }
+}
+
+void EXTI3_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE3] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE3]();
+    }
+}
+
+void EXTI4_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE4] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE4]();
+    }
+}
+
+void EXTI5_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE5] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE5]();
+    }
+}
+
+void EXTI6_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE6] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE6]();
+    }
+}
+
+void EXTI7_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE7] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE7]();
+    }
+}
+
+void EXTI8_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE8] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE8]();
+    }
+}
+
+void EXTI9_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE9] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE9]();
+    }
+}
+
+void EXTI10_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE10] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE10]();
+    }
+}
+
+void EXTI11_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE11] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE11]();
+    }
+}
+
+void EXTI12_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE12] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE12]();
+    }
+}
+
+void EXTI13_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE13] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE13]();
+    }
+}
+
+void EXTI14_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE14] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE14]();
+    }
+}
+
+void EXTI15_IRQHandler(void)
+{
+    if(pvoidNotificationFunctions[MEXTI_LINE15] != NULL)
+    {
+        pvoidNotificationFunctions[MEXTI_LINE15]();
+    }
+}
+
